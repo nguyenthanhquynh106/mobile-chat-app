@@ -1,4 +1,4 @@
-# mobile-chat-app
+
 ## CHỨC NĂNG
 - [ ] Đăng ký
 - [ ] Đăng nhập
