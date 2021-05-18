@@ -1,7 +1,7 @@
 
 ## CHỨC NĂNG
-- [ ] Đăng ký
-- [ ] Đăng nhập
+- [x] Đăng ký
+- [x] Đăng nhập
 - [ ] Quên mật khẩu
 - [ ] Tạo phòng chat
 - [ ] Chat cá nhân
