@@ -1,4 +1,4 @@
-package com.cmc.security.jwt;
+package com.cmc.jwt;
 
 import java.util.Date;
 
@@ -6,15 +6,19 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties.Lettuce.Cluster.Refresh;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
 import com.cmc.model.RefreshToken;
 import com.cmc.repository.RefreshTokenRepository;
-import com.cmc.security.service.UserDetailsImpl;
+import com.cmc.service.impl.UserDetailsImpl;
 
-import io.jsonwebtoken.*;
+import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.MalformedJwtException;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.SignatureException;
+import io.jsonwebtoken.UnsupportedJwtException;
 
 @Component
 public class JwtUtils {

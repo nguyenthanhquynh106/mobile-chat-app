@@ -1,4 +1,4 @@
-package com.cmc.payload.request;
+package com.cmc.request;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

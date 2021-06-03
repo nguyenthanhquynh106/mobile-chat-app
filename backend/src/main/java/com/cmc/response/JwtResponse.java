@@ -1,4 +1,4 @@
-package com.cmc.payload.response;
+package com.cmc.response;
 
 import java.util.List;
 

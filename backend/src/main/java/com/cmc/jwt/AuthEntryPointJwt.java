@@ -1,4 +1,4 @@
-package com.cmc.security.jwt;
+package com.cmc.jwt;
 
 import java.io.IOException;
 import java.util.HashMap;

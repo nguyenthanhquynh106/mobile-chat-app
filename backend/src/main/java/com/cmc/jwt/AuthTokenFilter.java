@@ -1,4 +1,4 @@
-package com.cmc.security.jwt;
+package com.cmc.jwt;
 
 import java.io.IOException;
 
@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.cmc.security.service.UserDetailsServiceImpl;
+import com.cmc.service.impl.UserDetailsServiceImpl;
 
 @Component
 public class AuthTokenFilter extends OncePerRequestFilter {

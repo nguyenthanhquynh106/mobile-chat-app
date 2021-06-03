@@ -1,4 +1,4 @@
-package com.cmc.payload.request;
+package com.cmc.request;
 
 public class LogOutRequest {
 	private Long userId;

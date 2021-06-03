@@ -1,9 +1,9 @@
-package com.cmc.payload.request;
+package com.cmc.request;
 
 import javax.validation.constraints.NotBlank;
 
 public class TokenRefreshRequest {
-	
+
 	@NotBlank
 	private String refreshToken;
 

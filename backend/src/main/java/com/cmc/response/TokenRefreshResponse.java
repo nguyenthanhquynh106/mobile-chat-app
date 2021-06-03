@@ -1,4 +1,4 @@
-package com.cmc.payload.response;
+package com.cmc.response;
 
 public class TokenRefreshResponse {
 	private String token;

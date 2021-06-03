@@ -1,4 +1,4 @@
-package com.cmc.security.service;
+package com.cmc.service.impl;
 
 import java.util.Date;
 import java.util.Optional;
@@ -12,9 +12,10 @@ import com.cmc.exception.TokenRefreshException;
 import com.cmc.model.RefreshToken;
 import com.cmc.repository.RefreshTokenRepository;
 import com.cmc.repository.UserRepository;
+import com.cmc.service.RefreshTokenService;
 
 @Service
-public class RefreshTokenService {
+public class RefreshTokenServiceImpl implements RefreshTokenService {
 	@Value("${jwt.refresh.expiration}")
 	private Long refreshTokenDurationMs;
 

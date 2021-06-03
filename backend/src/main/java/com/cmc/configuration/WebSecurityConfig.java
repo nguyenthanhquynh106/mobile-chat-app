@@ -3,7 +3,6 @@ package com.cmc.configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -15,9 +14,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.cmc.security.jwt.AuthEntryPointJwt;
-import com.cmc.security.jwt.AuthTokenFilter;
-import com.cmc.security.service.UserDetailsServiceImpl;
+import com.cmc.jwt.AuthEntryPointJwt;
+import com.cmc.jwt.AuthTokenFilter;
+import com.cmc.service.impl.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity
